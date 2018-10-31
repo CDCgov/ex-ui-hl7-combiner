@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="38px" viewBox="0 0 201 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mmg-tool-1" transform="translate(-21.000000, -80.000000)">
+            <g id="project-logo" transform="translate(22.000000, 81.000000)">
+                <g id="Group-2">
+                    <g id="Group" transform="translate(31.525547, 7.135135)" fill="#FFFFFF">
+                        <g id="logo-xlr-labs-ngmvps-beta">
+                            <text id="Onboarding-T" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="14" font-weight="400" letter-spacing="0.222222224">
+                                <tspan x="0" y="14">HL7 Combiner Tool</tspan>
+                            </text>
+                            <text id="v0.1" font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal">
+                                <tspan x="0.897810219" y="26.1621622">v0.1</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <polygon id="Path-14" points="5.43708765 9.85146723 18.98143 9.82431402 19.0558111 16.338367 16.8586617 16.5826029 19.1123234 21.8115949 3.75566691 24.3978659 7.40528258 16.7631002 4.97656374 16.2922066"></polygon>
+                    <path d="M18.7769233,20.0095181 L23.8038496,30.2261265 C25.2072575,33.0783802 23.7813919,35.3905886 20.5960295,35.3905886 L3.7695177,35.3905886 C0.594479721,35.3905886 -0.844575124,33.0842027 0.556768028,30.2361454 L4.16870754,22.8953233 L18.7769233,20.0095181 Z" id="Combined-Shape"></path>
+                    <path d="M18.7769233,20.0095181 C18.7769233,20.0095181 18.2393618,22.0142435 12.0397221,21.3004002 C6.52142533,20.8283632 4.16870754,22.8953233 4.16870754,22.8953233 L18.7769233,20.0095181 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.55" cx="12.7938923" cy="13.8420821" rx="1.90449209" ry="1.82780484"></ellipse>
+                    <path d="M16.9021414,16.8114218 L23.8035027,30.8375884 C25.2063534,33.6887096 23.7800361,36 20.5946737,36 L3.76816189,36 C0.593123908,36 -0.845742829,33.6932318 0.559332918,30.8375884 L7.46069423,16.8114218 L6.31709683,16.8114218 C5.4150508,16.8114218 4.68379801,16.0684561 4.68379801,15.1786022 L4.68379801,11.2485245 C4.68379801,10.3467431 5.42741427,9.61570494 6.31709683,9.61570494 L18.0457388,9.61570494 C18.9477848,9.61570494 19.6790376,10.3586706 19.6790376,11.2485245 L19.6790376,15.1786022 C19.6790376,16.0803836 18.9354213,16.8114218 18.0457388,16.8114218 L16.9021414,16.8114218 Z" id="Combined-Shape" stroke="#FFFFFF"></path>
+                    <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.594" cx="9.16375754" cy="5.11124331" rx="1.66613773" ry="1.59904819"></ellipse>
+                    <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.594" cx="14.1621707" cy="1.31350384" rx="1.36861311" ry="1.31350384"></ellipse>
+                    <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.55" fill="#1273CA" cx="12.0199937" cy="21.6085663" rx="1.66613773" ry="1.59904819"></ellipse>
+                    <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.55" cx="15.8283085" cy="28.0047591" rx="1.66613773" ry="1.59904819"></ellipse>
+                    <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.55" cx="10.621628" cy="26.7055324" rx="1" ry="1"></ellipse>
+                    <path d="M8.61877035,20.7860614 L2.82886924,32.6911351" id="Path-4" stroke="#FFFFFF" stroke-width="1.67507996" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M9.81831165,18.5729325 L10.5592176,16.9756098" id="Path-4" stroke="#FFFFFF" stroke-width="1.67507996" opacity="0.949999988" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

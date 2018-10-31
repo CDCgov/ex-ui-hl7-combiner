@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+nav div.icon-buttons div.icon-button {
+  position: relative;
+  top: -20px;
+}
+nav span.splitter {
+  width: 1px;
+  display: inline-block;
+  height: 50px;
+  background-color: #333;
+  opacity: 0.2;
+}
+
+div.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.3);
+  z-index: 1000;
+  font-size: 2em;
+  color: white;
+}
+div.loader i {
+  margin: 0 5px;
+}
+div.loader div.text-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  height: 80px;
+  margin: -40px 0 0 -125px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 6px;
+}
+
+div.Container {
+  margin: 10px auto 15px auto;
+  padding: 45px;
+}
+
+div.Container div.row,
+div.Container div.row div.col {
+  height: 100%;
+}
+
+div.Container div.blue-box {
+  height: 640px;
+}
+
+div.Container div.blue-box div.icon-buttons {
+  position: absolute;
+  bottom: 35px;
+  right: 27px;
+}
+
+div.filter label {
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
