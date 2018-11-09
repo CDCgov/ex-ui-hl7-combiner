@@ -16,12 +16,12 @@ COPY --from=builder /usr/src/app/build/ /usr/share/nginx/html/
 ARG SECURE_MODE
 ARG COMBINER_URL
 ARG HL7_UTILS_URL
-ARG IDENTITY_URL
+ARG AUTH_URL
 
 ENV SECURE_MODE ${SECURE_MODE}
 ENV COMBINER_URL ${COMBINER_URL}
 ENV HL7_UTILS_URL ${HL7_UTILS_URL}
-ENV IDENTITY_URL ${IDENTITY_URL}
+ENV AUTH_URL ${AUTH_URL}
 
 # pull latest
 RUN apk update && apk upgrade --no-cache

@@ -5,7 +5,7 @@ import App from './App';
 import axios from 'axios';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
-import { secureMode } from './defaults';
+import { secureMode, authURL } from './defaults';
 
 // get params
 const getParam = (name, url) => {
@@ -20,12 +20,10 @@ const getParam = (name, url) => {
 
 // get the token and set the app name
 const token = getParam('access_token');
-const app = 'onbtool';
 
 // force login if we're in secure mode
 const forceLogin = () => {
   if (!secureMode) return;
-  let authURL = `https://localhost:9443/auth/?app=${app}`;
   window.location.href = authURL;
 };
 window.forceLogin = forceLogin;
