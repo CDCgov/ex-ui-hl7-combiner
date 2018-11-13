@@ -57,6 +57,17 @@ This app is able to run in a configuration where a OAuth 2.0 access token is nee
 - `SECURE_MODE=true` to run in the secure mode configuration
 - `AUTH_URL=https://authorization-server.com/oauth/authorize` the value for the authorization URL from your OAuth 2.0 provider
 
+Your `AUTH_URL` should follow the [general guidelines for a Single Page App](https://www.oauth.com/oauth2-servers/single-page-apps/).
+The following is an example of what this URL might look like and how your `redirect_uri` should be formatted:
+
+```
+https://authorization-server.com/oauth/authorize
+	?client_id=REPLACE_WITH_CLIENT_ID
+	&response_type=code
+	&state=REPLACE_WITH_STATE
+	&redirect_uri=https%3A%2F%2Fexample-app.com%2Fauth
+```
+
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
