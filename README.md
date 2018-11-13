@@ -65,8 +65,10 @@ https://authorization-server.com/oauth/authorize
 	?client_id=REPLACE_WITH_CLIENT_ID
 	&response_type=code
 	&state=REPLACE_WITH_STATE
-	&redirect_uri=https%3A%2F%2Fexample-app.com%2Fauth
+	&redirect_uri=http%3A%2F%localhost%3A3000
 ```
+
+This example app does not use a specific callback endpoint currently and just expects the redirect_uri to be the index of the host domain.
 
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
