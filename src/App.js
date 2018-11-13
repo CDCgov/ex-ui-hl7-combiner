@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
-import axios from 'axios';
 import logo from './logo.svg';
 import '../node_modules/sweetalert/dist/sweetalert.css';
 import '../node_modules/fdns-ui-react/dist/styles/fdns-ui-react.css';
@@ -8,7 +7,7 @@ import './App.css';
 import {
   Container, Uploader, FilterSelect, IconButton, DropdownUser
 } from 'fdns-ui-react';
-import { mmgs, API, secureMode, jurisdictions } from './defaults';
+import { mmgs, secureMode, jurisdictions } from './defaults';
 import AdminModal from './AdminModal';
 
 import FDNS from 'fdns-js-sdk';
@@ -16,7 +15,6 @@ import FDNS from 'fdns-js-sdk';
 const fdns = new FDNS({
   HL7_UTILS_URL: window.config.HL7_UTILS_URL,
   COMBINER_URL: window.config.COMBINER_URL
-  // IDENTITY?
 });
 
 var promises = [];
@@ -31,26 +29,6 @@ class App extends Component {
       user: {},
       admin: false,
     };
-  }
-
-  // check for token
-  componentWillMount() {
-    // if in secure mode then get the user info
-    if (secureMode) {
-      // TODO: check for local storage of access token and such
-      // get the user info
-      axios.get(`${API.identity}/user`)
-        .then((res) => {
-          if (res.properties) {
-            this.setState({
-              user: res.properties,
-            });
-          }
-        })
-        .catch((err) => {
-          window.forceLogin();
-        });
-    }
   }
 
   // handle help event

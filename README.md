@@ -1,4 +1,5 @@
-# Whitelabel Onboarding Tool Dashboarding
+# Example HL7 Combiner Tool
+The purpose of this example app is to show how you can use the [fdns-ms-hl7-utils](https://github.com/cdcgov/fdns-ms-hl7-utils) and [fdns-ms-combiner](https://github.com/cdcgov/fdns-ms-combiner) services with a front-end interface built with [fdns-ui-react](https://github.com/cdcgov/fdns-ui-react) and [fdns-js-sdk](https://github.com/cdcgov/fdns-js-sdk). The use case for this example app is to take a raw [HL7](http://www.hl7.org) file and parse this file and format it into an Excel spreadsheet with assigned columns and rows. The assignment to these columns and rows is defined by a Message Mapping Guide (MMG) which is defined in a JSON configuration file. This can be used for onboarding Jurisdictions to ensure messages are being received with a standardized mapping format.
 
 ## Running Locally
 
@@ -29,21 +30,32 @@ To start the background processes necessary, run docker compose to spin up `fdns
 
     docker-compose up -d
 
-Make sure your `/public/config.js` file contains the correct port references for these instances. If you are not using Identity you may ignore that URL and change the `SECURE_MODE` property to `false`.
-
 To start the app:
 
     npm start
 
 You should be able to visit `http://localhost:3000/` to view the dashboard.
 
+You will also need to load the [mmg-example.json](./mmg-example.json) config using the [fdns-ms-combiner](https://github.com/cdcgov/fdns-ms-combiner) service.
+
+```sh
+curl -X POST \
+  "http://localhost:8085/api/1.0/config/mmg-example" \
+   -H "accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d @mmg-example.json
+```
+
 To stop running the docker background images:
 
 	docker-compose down
 
-## Using the app
+### Secure Mode
 
-A fresh instance will require MMG configs to be uploaded as JSON via the ADMIN button in the footer.
+This app is able to run in a configuration where a OAuth 2.0 access token is needed before accessing the front-end such as with Foundation Services running with OAuth 2.0 enabled. You can pass the following environment variables to your Docker container:
+
+- `SECURE_MODE=true` to run in the secure mode configuration
+- `AUTH_URL=https://authorization-server.com/oauth/authorize` the value for the authorization URL from your OAuth 2.0 provider
 
 ## Public Domain
 This repository constitutes a work of the United States Government and is not

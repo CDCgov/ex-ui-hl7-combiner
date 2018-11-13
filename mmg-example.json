@@ -1,0 +1,274 @@
+{
+  "file": {
+    "template": "Example_$DATE$",
+    "date-format": "YYYYMMddHHmmss"
+  },
+  "_id": "mmg-example",
+  "rows": [
+    {
+      "description": "Message Profile Identifier",
+      "jsonPath": "$..MSH-21..EI-3",
+      "label": "MSH-21"
+    },
+    {
+      "description": "Local Subject ID",
+      "jsonPath": "$..PID-3..CX-1",
+      "label": "PID-3"
+    },
+    {
+      "description": "Birth Date",
+      "jsonPath": "$..PID-7..TS-1",
+      "label": "PID-7"
+    },
+    {
+      "description": "Subject's Sex",
+      "jsonPath": "$..PID-8",
+      "label": "PID-8"
+    },
+    {
+      "description": "Race Category",
+      "jsonPath": "$..PID-10..CE-1",
+      "label": "PID-10"
+    },
+    {
+      "description": "Ethnic Group",
+      "jsonPath": "$..PID-22..CE-1",
+      "label": "PID-22"
+    },
+    {
+      "description": "Deceased Date",
+      "jsonPath": "$..PID-29..TS-1",
+      "label": "PID-29"
+    },
+    {
+      "description": "Local Record ID",
+      "jsonPath": "$..OBR-3..EI-1",
+      "label": "OBR-3"
+    },
+    {
+      "description": "Date First Electronically Submitted",
+      "jsonPath": "$..OBR-7..TS-1",
+      "label": "OBR-7"
+    },
+    {
+      "description": "Notification Result Status",
+      "jsonPath": "$..OBR-25",
+      "label": "OBR-25"
+    },
+    {
+      "description": "Condition Code",
+      "jsonPath": "$..OBR-31..CE-1",
+      "label": "OBR-31"
+    },
+    {
+      "description": "Illness Duration Units",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77977-7')].OBX-6.CE-1",
+      "label": "OBX-6 / 77977-7"
+    },
+    {
+      "description": "Age Unit at Case Investigation",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77998-3')].OBX-6.CE-1",
+      "label": "OBX-6 / 77998-3"
+    },
+    {
+      "description": "Other Race Text",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '32624-9')].OBX-5",
+      "label": "32624-9"
+    },
+    {
+      "description": "Country of Birth",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '78746-5')].OBX-5..*",
+      "label": "78746-5"
+    },
+    {
+      "description": "Other Birth Place",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '21842-0')].OBX-5",
+      "label": "21842-0"
+    },
+    {
+      "description": "Country of Usual Residence",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77983-5')].OBX-5..*",
+      "label": "77983-5"
+    },
+    {
+      "description": "Date of Illness Onset",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '11368-8')].OBX-5..TS-1",
+      "label": "11368-8"
+    },
+    {
+      "description": "Illness End Date",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77976-9')].OBX-5",
+      "label": "77976-9"
+    },
+    {
+      "description": "Illness Duration",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77977-7')].OBX-5",
+      "label": "77977-7"
+    },
+    {
+      "description": "Pregnancy Status",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77996-7')].OBX-5..*",
+      "label": "77996-7"
+    },
+    {
+      "description": "Diagnosis Date",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77975-1')].OBX-5..TS-1",
+      "label": "77975-1"
+    },
+    {
+      "description": "Hospitalized",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77974-4')].OBX-5..*",
+      "label": "77974-4"
+    },
+    {
+      "description": "Admission Date",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '8656-1')].OBX-5..TS-1",
+      "label": "8656-1"
+    },
+    {
+      "description": "Discharge Date",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '8649-6')].OBX-5..TS-1",
+      "label": "8649-6"
+    },
+    {
+      "description": "Duration of Hospital Stay in Days",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '78033-8')].OBX-5..SN-2",
+      "label": "78033-8"
+    },
+    {
+      "description": "Subject Died",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77978-5')].OBX-5..*",
+      "label": "77978-5"
+    },
+    {
+      "description": "Jurisdiction Case Identifier",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77993-4')].OBX-5",
+      "label": "77993-4"
+    },
+    {
+      "description": "Legacy Case Identifier",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77997-5')].OBX-5",
+      "label": "77997-5"
+    },
+    {
+      "description": "Age at Case Investigation",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77998-3')].OBX-5..SN-2",
+      "label": "77998-3"
+    },
+    {
+      "description": "Case Disease Imported Code",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77982-7')].OBX-5",
+      "label": "77982-7"
+    },
+    {
+      "description": "Imported Country",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV153')].OBX-5..*",
+      "label": "INV153"
+    },
+    {
+      "description": "Imported City",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == 'INV155')].OBX-5",
+      "label": "INV155"
+    },
+    {
+      "description": "Country of Exposure",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77984-3')].OBX-5",
+      "label": "77984-3"
+    },
+    {
+      "description": "State or Province of Exposure",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77985-0')].OBX-5",
+      "label": "77985-0"
+    },
+    {
+      "description": "City of Exposure",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77986-8')].OBX-5",
+      "label": "77986-8"
+    },
+    {
+      "description": "Transmission Mode",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77989-2')].OBX-5",
+      "label": "77989-2"
+    },
+    {
+      "description": "Case Class Status Code",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77990-0')].OBX-5..*",
+      "label": "77990-0"
+    },
+    {
+      "description": "Immediate National Notifiable Condition",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77965-2')].OBX-5",
+      "label": "77965-2"
+    },
+    {
+      "description": "Case Outbreak Indicator",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77980-1')].OBX-5..*",
+      "label": "77980-1"
+    },
+    {
+      "description": "Case Outbreak Name",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77981-9')].OBX-5",
+      "label": "77981-9"
+    },
+    {
+      "description": "Jurisdiction Code",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77969-4')].OBX-5",
+      "label": "77969-4"
+    },
+    {
+      "description": "Reporting Source Type Code",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '48766-0')].OBX-5",
+      "label": "48766-0"
+    },
+    {
+      "description": "Binational Reporting Criteria",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77988-4')].OBX-5..*",
+      "label": "77988-4"
+    },
+    {
+      "description": "Case Investigation Start Date",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77979-3')].OBX-5",
+      "label": "77979-3"
+    },
+    {
+      "description": "Date Reported",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77995-9')].OBX-5",
+      "label": "77995-9"
+    },
+    {
+      "description": "Comment",
+      "jsonPath": "$..OBX[?(@.OBX-3.CE-1 == '77999-1')].OBX-5",
+      "label": "77999-1"
+    },
+    {
+      "description": "Sending Application",
+      "jsonPath": "$..MSH-3..*",
+      "label": "MSH-3"
+    },
+    {
+      "description": "Sending Facility",
+      "jsonPath": "$..MSH-4..*",
+      "label": "MSH-4"
+    },
+    {
+      "description": "Receiving Application",
+      "jsonPath": "$..MSH-5..*",
+      "label": "MSH-5"
+    },
+    {
+      "description": "Receiving Facility",
+      "jsonPath": "$..MSH-6..*",
+      "label": "MSH-6"
+    },
+    {
+      "description": "Date/Time of Message",
+      "jsonPath": "$..MSH-7..*",
+      "label": "MSH-7"
+    },
+    {
+      "description": "Message Control ID",
+      "jsonPath": "$..MSH-10",
+      "label": "MSH-10"
+    }
+  ]
+}
